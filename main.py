@@ -9,7 +9,7 @@ CORS(app)
 @app.route('/')
 def homepage():
     return "Hello Medium"
-    <h1>Hello heroku</h1>
+    
   
 port=os.environ["PORT"]
 app.run('0.0.0.0',port, debug=True)
