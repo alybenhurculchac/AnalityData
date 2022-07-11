@@ -1,16 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-from flask_cors import CORS
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
-CORS(app)
-@app.route('/')
-def homepage():
-    return "Hello Medium"
-    
-  
-port=os.environ["PORT"]
-app.run('0.0.0.0',port, debug=True)
 
+
+@app.route("/")
+def index():
+    return "Hello Medium"
+
+
+if __name__ == '__main__':
+    app.run(port=5000)
