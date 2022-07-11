@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 @app.route('/')
 def homepage():
-    return """
+    return "Hello Medium"
     <h1>Hello heroku</h1>
   
 port=os.environ["PORT"]
