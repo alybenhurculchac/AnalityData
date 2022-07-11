@@ -22,7 +22,7 @@ def index():
     y = dataset.iloc[:, -1].values
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
     clf = MLPClassifier(activation="relu",random_state=1, solver="lbfgs", max_iter=200).fit(X_train, y_train)
-    flor = clf.predict([[5.1, 3.8, 1.5, 0.3]])
+    flor = clf.predict([[0, 3.8, 1.5, 0.3]])
     Pre = showPrediction(flor[0])
     return Pre
 
