@@ -24,7 +24,8 @@ def index():
     clf = MLPClassifier(activation="relu",random_state=1, solver="lbfgs", max_iter=200).fit(X_train, y_train)
     flor = clf.predict([[5.1, 3.8, 1.5, 0.3]])
     Pre = showPrediction(flor[0])
-    return Pre
+    y_pred = clf.predict(X_test)
+    return y_pred
 
 
 if __name__ == '__main__':
