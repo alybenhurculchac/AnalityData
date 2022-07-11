@@ -10,7 +10,7 @@ def showPrediction(argument):
     1: "nn: Iris versicolor",
     2: "nn: Iris virginica"
   }
-  print(switcher.get(argument, "Unknown flower"))
+  return (switcher.get(argument, "Unknown flower"))
     
 app = Flask(__name__)
 
