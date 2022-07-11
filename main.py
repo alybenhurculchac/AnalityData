@@ -7,3 +7,6 @@ CORS(app)
 def anality_page():
   return "hola mundo"
 
+port=os.environ["PORT"]
+app.run('0.0.0.0',port, debug=True)
+
