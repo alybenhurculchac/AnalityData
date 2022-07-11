@@ -8,6 +8,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    dataset = pd.read_csv('r08iris.csv', delimiter=",")
+#dividir el dataset
+    X = dataset.iloc[:, 0:4].values
+    y = dataset.iloc[:, -1].values
     return "Hello Medium"
 
 
