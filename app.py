@@ -4,6 +4,14 @@ from sklearn.model_selection import train_test_split
 
 from flask import Flask
 
+def showPrediction(argument):
+  switcher = {
+    0: "nn: Iris setosa",
+    1: "nn: Iris versicolor",
+    2: "nn: Iris virginica"
+  }
+  print(switcher.get(argument, "Unknown flower"))
+    
 app = Flask(__name__)
 
 @app.route("/")
