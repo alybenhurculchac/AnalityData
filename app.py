@@ -28,7 +28,7 @@ def index():
     # Pre = showPrediction(flor[0])
     #y_pred = clf.predict(X_test)
     #html = """<p>>%s</p>""" % y_pred
-    return html
+    return "hola"
 
 
 if __name__ == '__main__':
